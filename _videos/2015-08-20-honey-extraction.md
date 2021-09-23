@@ -10,3 +10,4 @@ I was also interviewed on the Kiwimana Buzz show. I had a great time talking abo
 
 * [More on crush & strain harvesting](https://www.youtube.com/watch?v=CH7uVo42vVk)
 * [The t-shirt: "We are all batpeople"](https://www.youtube.com/watch?v=ahQzTLqIAoA)
+* [Test](https://d20hbmrdzpuuak.cloudfront.net/79c0d19e-a7aa-4209-b76f-4e6a2b23615a/AppleHLS1/rosewood.m3u8)

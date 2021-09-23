@@ -5,6 +5,8 @@ permalink: /videos/
 
 <ul class='videos'>
   {% for video in site.videos reversed %}
+  <p>{{ site.baseurl }}{{ video.url }} </p>
+  <p> </p>
   <li>
     <a href='{{ site.baseurl }}{{ video.url }}'>
       <h3>{{ video.title }}</h3>
@@ -14,4 +16,3 @@ permalink: /videos/
   </li>
   {% endfor %}
 </ul>
-

@@ -3,19 +3,36 @@ layout: default
 ---
 <article itemscope itemtype='http://schema.org/VideoObject'>
   <header>
+	  <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
 	  <h2 itemprop='name'>{{ page.title }}</h2>
 	  <time itemprop='uploadDate' content='{{ page.date }}'>
 	    {{ page.date | date: '%d %B %Y'}}
 	  </time>
 	</header>
 	<section class='video-wrapper'>
-		<iframe src='http://www.youtube.com/embed/{{ page.youtube_id }}'
-		        itemprop='embedUrl'
-		        frameborder='0'
-		        allowfullscreen >
-		</iframe>
+		<video
+    id="my-video"
+    class="video-js"
+    controls
+    preload="auto"
+    width="640"
+    height="264"
+    poster="MY_VIDEO_POSTER.jpg"
+    data-setup="{}"
+  >
+    <source src="https://d20hbmrdzpuuak.cloudfront.net/79c0d19e-a7aa-4209-b76f-4e6a2b23615a/AppleHLS1/rosewood.m3u8" type="application/x-mpegURL" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
 	</section>
 	<section class='description' itemprop='description'>
   	{{ content }}
   </section>
+  <script src="https://vjs.zencdn.net/7.15.4/video.min.js"></script>
 </article>

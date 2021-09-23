@@ -16,9 +16,12 @@ permalink: /
   </nav>
 </header>
 
+<p> {{ site.time }}</p>
+<p> {{ site.html_files }}</p>
+
 <ul class='videos'>
   {% assign videos = site.videos | reverse %}
-  {% for video in videos | limit: 3 %}
+  {% for video in videos limit: 3 %}
   <li>
     <a href='{{ site.baseurl }}{{ video.url }}'>
       <h3>{{ video.title }}</h3>
